@@ -6,7 +6,7 @@
 ## How to run MySQL container with a volume attached
 
 ```bash
-docker run --name mysql-container -d -p 3306:3306 --name mysql -v my-sql-data:/var/lib/mysql mysql-local:1.0.0
+docker run --name mysql-container -d -p 3306:3306 -v my-sql-data:/var/lib/mysql mysql-local:1.0.0
 ```
 
 ## How to run an App container which will connect to a MySQL db container
